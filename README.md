@@ -1,3 +1,6 @@
+![test](https://user-images.githubusercontent.com/93985232/221225373-75e35814-eea9-435a-ba8b-bec1e087f5d8.png)
+
+
 ## JDK for minecraft ##
 ### About the container: ###
 
@@ -54,5 +57,5 @@ cd 17/
 
 - Run the build:
 ```bash
-docker build -t docker.io/your_nickname/jdk:tag_name
+docker build -t docker.io/your_nickname/jdk:tag_name .
 ```

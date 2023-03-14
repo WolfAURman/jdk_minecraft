@@ -50,12 +50,7 @@ git clone https://github.com/WolfAURman/jdk_minecraft
 cd jdk_minecraft/
 ```
 
-- Navigate to the desired folder (folder name = jdk versions)
-```bash
-cd 17/
-```
-
 - Run the build:
 ```bash
-docker build -t docker.io/your_nickname/jdk:tag_name .
+docker build -t docker.io/your_nickname/jdk:tag_name -f Dockerfile.rl9.1-java<verison>
 ```

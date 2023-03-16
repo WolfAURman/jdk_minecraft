@@ -10,4 +10,5 @@ RUN curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22
 	&& ln -svf "$JAVA_PATH" /usr/bin/java
 RUN dnf install freetype \
 		fontconfig \
-		dejavu-sans-mono-fonts -y
+		dejavu-sans-mono-fonts -y \
+		&& dnf clean all

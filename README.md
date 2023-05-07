@@ -24,12 +24,12 @@ Get docker image you can take [here](https://hub.docker.com/r/rickaurman/jdk).
 You need to enter this command:
 - java 11
 ```bash
-docker pull rickaurman/jdk:rl9.1-java11-22.3.1
+docker pull rickaurman/jdk:rl9.1-java11-22.3.2
 ```
 
 - java 17
 ```bash
-docker pull rickaurman/jdk:rl9.1-java17-22.3.1
+docker pull rickaurman/jdk:rl9.1-java17-22.3.2
 ```
 
 - java 19
@@ -52,5 +52,5 @@ cd jdk_minecraft/
 
 - Run the build:
 ```bash
-docker build -t docker.io/your_nickname/jdk:tag_name -f Dockerfile.rl9.1-java<verison>
+docker build -t docker.io/your_nickname/jdk:tag_name -f Dockerfile.rl9.1-java<verison> .
 ```

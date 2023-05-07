@@ -3,9 +3,9 @@ FROM rockylinux:9.1
 MAINTAINER RickAURman
 
 ARG JAVA_VERSION=java17
-ARG JAVA_PATH=/opt/graalvm-ce-$JAVA_VERSION-22.3.1/bin/java
+ARG JAVA_PATH=/opt/graalvm-ce-$JAVA_VERSION-22.3.2/bin/java
 
-RUN curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.1/graalvm-ce-$JAVA_VERSION-linux-amd64-22.3.1.tar.gz \
+RUN curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-$JAVA_VERSION-linux-amd64-22.3.2.tar.gz \
 	| tar -zxvC /opt/ \
 	&& ln -svf "$JAVA_PATH" /usr/bin/java
 RUN dnf install freetype \

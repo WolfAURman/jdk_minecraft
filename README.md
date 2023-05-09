@@ -32,11 +32,6 @@ docker pull rickaurman/jdk:rl9.1-java11-22.3.2
 docker pull rickaurman/jdk:rl9.1-java17-22.3.2
 ```
 
-- java 19
-```bash
-docker pull rickaurman/jdk:rl9.1-java19-22.3.1
-```
-
 ## Build ##
 ### If you want to create your own docker container image: ###
 

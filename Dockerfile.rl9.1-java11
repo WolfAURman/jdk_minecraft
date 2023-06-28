@@ -8,7 +8,9 @@ ENV JAVA_HOME=/opt/graalvm-ce-$JAVA_VERSION-$GRAALVM_VERSION
 
 RUN curl -L https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-$GRAALVM_VERSION/graalvm-ce-$JAVA_VERSION-linux-amd64-$GRAALVM_VERSION.tar.gz \
 	| tar -zxvC /opt/ \
-	&& update-alternatives --install /usr/bin/java java "$JAVA_HOME"/bin/java 2000
+	&& update-alternatives --install /usr/bin/java java "$JAVA_HOME"/bin/java 2000 \
+	&& update-alternatives --install /usr/bin/javac javac "$JAVA_HOME"/bin/javac 2000 \
+	&& update-alternatives --install /usr/bin/jar jar "$JAVA_HOME"/bin/jar 2000
 
 RUN dnf install freetype \
 		fontconfig \
